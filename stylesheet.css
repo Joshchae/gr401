@@ -1,0 +1,65 @@
+header {
+    height: 500px;
+    background-image: url(./src/img/header/bgk-header.png);
+    background-size: 100% 500px;
+}
+
+nav {
+    display: inline-block;
+    vertical-align:baseline;
+}
+
+nav ul li {
+    list-style-type: none;
+    float:left;
+    padding: 20px;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+nav ul li a {
+    color: seagreen;
+}
+
+.logo {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.companylogo {
+    color: seagreen;
+    padding-left: 10px;
+    font-size: 110%;
+}
+.introduction {
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+    font-size: 130%;
+}
+
+.introduction h3 {
+    color: white;
+}
+
+.introbutton {
+    font-size: 85%;
+    color: white;
+    background-color: purple;
+}
+
+#abo {
+    height: 300px;
+    border: 1px solid red;
+}
+#abo div {
+    width: 200px;
+    height: 30px;
+    margin: 100px auto;
+    text-align: center;    
+    font-size: 25px;
+}
+
+#storyvideo {
+    text-align: center;
+}
