@@ -1,3 +1,89 @@
+
+
+
+
+
+
+
+
+
+/*  Daniel Contact part */
+
+.contact {
+    display: flex;
+}
+
+
+.grid-container-contact {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "title"
+      "name"
+      "email"
+      "subject"
+      "message"
+      "submit";
+  }
+  
+  .title { grid-area: title; }
+  
+  .name { grid-area: name; }
+  
+  .email { grid-area: email; }
+  
+  .subject { grid-area: subject; }
+  
+  .message { grid-area: message; }
+  
+  .submit { grid-area: submit; } 
+
+
+.grid-container-client {
+    display: grid;
+    grid-template-columns: 201px 300px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    gap: 42px 13px;
+    grid-template-areas:
+      "Clients Clients"
+      "Zara Mango"
+      "Barneys Gucci"
+      "Calvin Nike"
+      "Converse Puma"
+      "Levis Billabong";
+  }
+  
+  .Clients { grid-area: Clients;}
+  
+  .Zara { grid-area: Zara; }
+  
+  .Mango { grid-area: Mango; }
+  
+  .Barneys { grid-area: Barneys; }
+  
+  .Gucci { grid-area: Gucci; }
+  
+  .Calvin { grid-area: Calvin; }
+  
+  .Nike { grid-area: Nike; }
+  
+  .Converse { grid-area: Converse; }
+  
+  .Puma { grid-area: Puma; }
+  
+  .Levis { grid-area: Levis; }
+  
+  .Billabong { grid-area: Billabong; }
+
+  .grid-container-client img {
+      width: 102px;
+  }
+
+
+  /* End of Daniels Contact part */
+  
 header {
     height: 500px;
     background-image: url(./src/img/header/bgk-header.png);
