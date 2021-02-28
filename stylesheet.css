@@ -11,13 +11,16 @@
 
 .contact {
     display: flex;
+    justify-content: space-around;
 }
+
+
 
 
 .grid-container-contact {
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px 50px 250px 50px;
     gap: 0px 0px;
     grid-template-areas:
       "title"
@@ -43,9 +46,9 @@
 
 .grid-container-client {
     display: grid;
-    grid-template-columns: 201px 300px;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
-    gap: 42px 13px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 50px 100px 100px 100px 100px 100px;
+    gap: 0px 0px;
     grid-template-areas:
       "Clients Clients"
       "Zara Mango"
@@ -78,7 +81,7 @@
   .Billabong { grid-area: Billabong; }
 
   .grid-container-client img {
-      width: 102px;
+      width: 100px;
   }
 
 
