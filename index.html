@@ -54,14 +54,14 @@
 <!-- position items with grid or flexbox   https://blog.udemy.com/css-grid-vs-flexbox   https://grid.layoutit.com/ -->
 
 <section class="contact">
-    <form>
+    <form method="GET" autocomplete="on">
         <div class="grid-container-contact">
             <div class="title"><h3>GIVE US A GOOD NEWS</h3></div>
-            <div class="name"><input type="text"></div>
-            <div class="email"><input type="email"></div>
-            <div class="subject"><input type="text" ></div>
-            <div class="message"><input type="text" maxlength="200"></div>
-            <div class="submit"><input type="submit"></div>
+            <div class="name"><input type="text" value="Name" size="50"></div>
+            <div class="email"><input type="email" value="Email" size="50"></div>
+            <div class="subject"><input type="text" value="Subject" size="50"></div>
+            <div class="message"><textarea  maxlength="200"  placeholder="Your message here"  rows="12"   cols="46"></textarea></div>
+            <div class="submit"><input class="introbutton" type="submit" value="SUBMIT"></div>
           </div>
           </form>
     
