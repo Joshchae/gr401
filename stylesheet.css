@@ -216,7 +216,7 @@ footer {
     display: flex;
     flex-direction: row;
   }
-=======
+
 
 
 
@@ -228,18 +228,39 @@ footer {
 
 /*  Daniel Contact part */
 
+
+
+/* For development only */
+
+
 .contact {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+  
+  
 }
 
+input {
+  resize: horizontal;
+  width: 250px;
+}
+
+input:active {
+  width: 250px   
+}
+
+input:focus {
+  min-width: 250px;
+}
 
 
 
 .grid-container-contact {
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 50px 50px 50px 50px 250px 50px;
+    grid-template-columns: 250px;
+    grid-template-rows: 50px 50px 50px 50px 250px 100px;
     gap: 0px 0px;
     grid-template-areas:
       "title"
@@ -265,9 +286,10 @@ footer {
 
 .grid-container-client {
     display: grid;
-    grid-template-columns: 300px 300px;
+   
+    grid-template-columns: 100px 100px;
     grid-template-rows: 50px 100px 100px 100px 100px 100px;
-    gap: 0px 0px;
+    gap: 0px 50px;
     grid-template-areas:
       "Clients Clients"
       "Zara Mango"
@@ -299,8 +321,17 @@ footer {
   
   .Billabong { grid-area: Billabong; }
 
-  .grid-container-client img {
-      width: 100px;
+  
+
+  .grid-container-client div img {
+    width: 100px;
+  }
+
+  .submitbutton {
+    color: #65d4ca;
+    border: 1px solid #65d4ca;
+    width: 100px;
+    height: 50px;
   }
 
 
@@ -410,5 +441,68 @@ nav ul li a:hover {
 
 #storyvideo {
     text-align: center;
+}
+
+/* Media Queries */
+
+/* Desktop Computer */
+
+@media only screen  and (min-width: 1024px) {
+
+  body {
+    background-color: white;
+  }
+
+.submitbutton {
+  color: #65d4ca;
+  border: 1px solid #65d4ca;
+  width: 100px;
+  height: 50px;
+}
+
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  body {
+    background-color: red;
+  }
+
+  
+
+}
+
+/* Smartphone */
+
+@media only screen and (max-width: 767px) {
+
+  body {
+    background-color: yellow;
+  }
+
+.contact {
+  flex-direction: column;
+  
+}
+
+  .grid-container-contact {   
+   justify-content: center;
+   justify-items: center;
+   align-items: center;    
+    /* center items */    
+  }
+
+  .grid-container-client {
+    justify-content: center;
+   justify-items: center;
+   align-items: center;  
+
+  }
+
+
+  
+
 }
 
