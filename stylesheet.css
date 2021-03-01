@@ -63,3 +63,226 @@ nav ul li a {
 #storyvideo {
     text-align: center;
 }
+
+
+
+
+
+/* Joldon's footer styling */
+#tms {
+  height: 500px;
+  background-image: url(./src/img/teams/bgk-middle.png);
+  background-size: cover;
+  border: 1px;
+  color: white;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#tms h1 {
+  margin-bottom: 3px;
+}
+
+#tms h5 {
+  margin-top: 3px;
+}
+
+
+.white-containers {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.white-container1 {
+    width: 15%;
+    height: 150px;
+    border: 1px solid white;
+    background-color: white;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.white-container2 {
+    width: 15%;
+    height: 150px;
+    border: 1px solid white;
+    background-color: white;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.white-container3 {
+    width: 15%;
+    height: 150px;
+    border: 1px solid white;
+    background-color: white;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.white-container4 {
+    width: 15%;
+    height: 150px;
+    border: 1px solid white;
+    background-color: white;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.teams-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.container1 {
+  width: 15%;
+  height: 50px;
+  border: 1px solid white;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  align-content:
+  
+  
+}
+.container1 h5, h6 {
+  margin: 5px;
+}
+.container2 {
+  width: 15%;
+  height: 50px;
+  border: 1px solid white;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.container2 h5, h6 {
+    margin: 5px;
+  }
+
+
+.container3 {
+  width: 15%;
+  height: 50px;
+  border: 1px solid white;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container3 h5, h6 {
+    margin: 5px;
+  }
+
+.container4 {
+  width: 15%;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container4 h5, h6 {
+    margin: 5px;
+  }
+
+
+footer {
+  height: 250px;
+  
+  background-image: url(./src/img/footer/bgk-footer.png);
+  background-size: cover;
+  border: 1px;
+  border-color: aqua;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* Keeping the below section for a possible later test
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    */
+
+.tajam-footer {
+  width: 22%;
+}
+
+.tajam-footer h6 {
+  margin: 9px;
+  margin-top: 0px;
+}
+
+.our-studio-footer {
+  width: 22%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.our-studio-footer h6 {
+  width: 200px;
+  margin-top: 3px;
+}
+
+.stay-in-touch-footer {
+  width: 22%;
+  margin-bottom: 20px;
+  
+}
+
+.stay-in-touch-footer form {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* trying to shift copyright text to the right. Must look at it later
+.stay-in-touch-footer h6 {
+  float: right;
+} */
+
+.bottom-information, h6 {
+  display: inline-block;
+  align-items: bottom;
+  
+}
+
+.social-media {
+  display: flex;
+  justify-items: center;
+  flex-wrap: nowrap;
+}
+/* For some reason, creating this selector makes images placed in column
+.social-media {
+    padding: 29px;
+    display: inline-block;
+    width: 30px;
+} */
+
+.phone-number {
+  display: flex;
+  flex-direction: row;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+  }
