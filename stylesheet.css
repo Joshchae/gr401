@@ -514,9 +514,12 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .exp-contents {
+  display: flex;
+  flex-direction: row;
   font-family: 'Times New Roman', Times, serif;
   font-size: 60%;
   color: grey;
@@ -526,67 +529,87 @@ nav ul li a:hover {
 }
 
 .exp-line {
-  width: 100px;
+  width: 60px;
   margin: 5px auto;
+  margin-bottom: 50px;
   background-color: grey;
 }
 
 .exp-wrap {
-  height: 400px;
-  width: 600px;
+  
   display: grid;
-  grid-template-columns: repeat(5, 10em);
-  grid-template-rows: repeat(5, 10em);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  border: 1px solid red;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 150px);
+  margin-bottom: 50px;
+  
+    
+  
+}
+.exp-wrap div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
+}
+
+.exp-wrap div img {
+  height: 50px;
 }
 
 .exp-item1 {
   grid-area: 1 / 1 / 2 / 2; 
-  border: 1px solid black;
+ 
+  
   text-align: center;
 }
 
 .exp-item2 {
   grid-area: 1 / 2 / 2 / 3;
-  border: 1px solid black;
+  border-left: 1px solid grey;
+  
+  border-right:grey 1px solid;
   text-align: center;
 }
 
 .exp-item3 {
   grid-area: 1 / 3 / 2 / 4;
-  border: 1px solid black;
+  
+  
   text-align: center;
 }
 
 .exp-item4 {
   grid-area: 2 / 1 / 3 / 2;
-  border: 1px solid black;
+  border-top: 1px solid grey;
+  
   text-align: center;
 }
 
 .exp-item5 {
   grid-area: 2 / 2 / 3 / 3;
-  border: 1px solid black;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
   text-align: center;
 }
 
 .exp-item6 {
   grid-area: 2 / 3 / 3 / 4;
-  border: 1px solid black;
+  
+  border-top: 1px solid grey;
+ 
   text-align: center;
 }
 
 .exp-wrap h6 {
-  font-size: 5%;
+  font-size: 8px;
   text-transform: uppercase;
 }
 
 .exp-wrap p {
   text-transform: capitalize;
-  font-size: 1px;
+  font-size: 10px;
   color: grey;
 }
 
