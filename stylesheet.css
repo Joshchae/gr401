@@ -350,27 +350,48 @@ header {
     height: 700px;
 }
 
+nav {
+  display: block;
+}
+
+.headerlogo {
+  float: left;
+  margin-left: 160px;
+  margin-top: 30px;
+}
+
+.headerlogo p {
+  margin: 0;
+}
+/*
 nav img {
     float: left;
     height: 50px;
     padding: 5px;
 }
 
+.logo {
+  margin-left: 160px;
+  margin-top: 25px;
+}
+
 #headerlogo {
     color: #65d4ca;
     font-size: 30px;
-    padding: 30px 10px;
-    display: inline-block;
+    padding-top: 30px;
 }
-
-nav {
-    display: block;
+*/
+nav::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 nav ul {
     float: right;
     margin: 30px;
 }
+
 nav ul li {
     font-size: 16px;
     display: inline-block;
@@ -387,11 +408,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #65d4ca;
-}
-
-.logo {
-    margin-left: 160px;
-    margin-top: 25px;
 }
 
 .companylogo {
