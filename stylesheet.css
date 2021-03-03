@@ -459,7 +459,7 @@ nav ul li a:hover {
 .hd-line {
   width: 100px;
   margin: 0 auto;
-  border: 1px solid #65d4ca;
+  border-bottom: 1px solid #65d4ca;
 }
 
 .button {
@@ -571,7 +571,7 @@ nav ul li a:hover {
   width: 60px;
   margin: 5px auto;
   margin-bottom: 50px;
-  background-color: grey;
+  border-bottom: 1px solid grey;
 }
 
 .exp-wrap {
