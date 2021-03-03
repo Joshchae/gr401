@@ -136,6 +136,10 @@
     </div>
   </div>
   <h6>Become part of our dream team, let's join us!</h6>
+  <br/>
+  <button class="introbutton">
+    We are hiring
+  </button>
 </section>
 
 
@@ -177,6 +181,7 @@
 <footer>
   <div class="tajam-footer">
     <img class="footer-logo" src="./src/img/footer/logo.png" alt="Footer-logo: tajam"/>
+    <div id="tajam-footer-logo">tajam</div>
     <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur deserunt repellendus beatae quos illum eligendi porro ab animi officia totam fugiat hic, dolore autem adipisci eveniet.</h6>
   <div class = "bottom-information">
     <!-- <ul>
@@ -193,29 +198,38 @@
   <div class="our-studio-footer">
     <h4>Our Studio</h4>
     <div class="address">
-    <img src="src/img/footer/big104.png" alt="big icon"/>
+    <img src="src/img/footer/big104.png" alt="big icon" height="15"/>
     <h6>Ruco cucruk, JI, Radio luar dalem jos No.12-13, Kalideres - Jakarta Barat 11480 - Indonesia</h6>
     </div>
     <!-- I wanted to create an image-icon of a small phone 
     <i class="fa fa-phone"></i> -->
     <div class="phone-number">
-      <img src="src/img/footer/phone351.png" alt="phone icon"/>
+      <img src="src/img/footer/phone351.png" alt="phone icon" height="15"/>
       <h6>(+62) 21-2224 3333</h6>
     </div>
   </div>
   
   <div class="stay-in-touch-footer">
     <h4>Stay in Touch</h4> 
-    <form><label for="subscription"></label>
+    <!--
+        <form><label for="subscription"></label>
         <input
           type="text"
           id="subscription"
           name="subscription"/>
-          <!-- <input type="submit" value="Submit"/> -->
+          
           <span class="subscription-btn"></span>
         <button type="submit" placeholder="Subsribe our newsletter">          
-         <!-- <img src=".src/img/footer/paper122.png" alt="Flying paper"/> -->
+         
         </button>
+    </form> -->
+
+    <!-- <input type="submit" value="Submit"/> -->
+    <!-- <img src=".src/img/footer/paper122.png" alt="Flying paper"/> -->
+
+    <form action="" id="newsletter-form">
+        <input type="email" name="email-newsletter" id="email-newsletter" placeholder="Subscribe our newsletter">
+        <input type="submit" id="btn-newsletter" value="">
     </form>
     
     <div class = "social-media">    
@@ -238,7 +252,9 @@
         <img src="./src/img/footer/youtube.png" alt="Youtube"/>
         </a>
       </div>
+      <div class="copyright">
       <h6> Copyright 2015 - Tajem Creative</h6>
+      </div>
     </div>
   
   
