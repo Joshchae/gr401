@@ -298,8 +298,6 @@ input:focus {
   min-width: 250px;
 }
 
-
-
 .grid-container-contact {
     display: grid;
     grid-template-columns: 250px;
@@ -524,6 +522,7 @@ nav ul li a:hover {
   box-sizing: border-box;
   padding-top: 20px;
 }
+
 
 .abo-section-header h3 {
   font-family:'Times New Roman', Times, serif;
