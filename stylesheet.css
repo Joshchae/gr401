@@ -81,7 +81,7 @@
   margin-right: 12px;
   display: flex;
   flex-direction: column;
-  align-content:
+  
   
   
 }
@@ -259,7 +259,7 @@ footer {
     display: flex;
     flex-direction: row;
   }
-=======
+
 
 
 
@@ -271,18 +271,39 @@ footer {
 
 /*  Daniel Contact part */
 
+
+
+/* For development only */
+
+
 .contact {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+  
+  
 }
 
+input {
+  resize: horizontal;
+  width: 250px;
+}
+
+input:active {
+  width: 250px   
+}
+
+input:focus {
+  min-width: 250px;
+}
 
 
 
 .grid-container-contact {
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 50px 50px 50px 50px 250px 50px;
+    grid-template-columns: 250px;
+    grid-template-rows: 50px 50px 50px 50px 250px 100px;
     gap: 0px 0px;
     grid-template-areas:
       "title"
@@ -308,9 +329,10 @@ footer {
 
 .grid-container-client {
     display: grid;
-    grid-template-columns: 300px 300px;
+   
+    grid-template-columns: 100px 100px;
     grid-template-rows: 50px 100px 100px 100px 100px 100px;
-    gap: 0px 0px;
+    gap: 0px 50px;
     grid-template-areas:
       "Clients Clients"
       "Zara Mango"
@@ -342,8 +364,17 @@ footer {
   
   .Billabong { grid-area: Billabong; }
 
-  .grid-container-client img {
-      width: 100px;
+  
+
+  .grid-container-client div img {
+    width: 100px;
+  }
+
+  .submitbutton {
+    color: #65d4ca;
+    border: 1px solid #65d4ca;
+    width: 100px;
+    height: 50px;
   }
 
 
@@ -362,27 +393,48 @@ header {
     height: 700px;
 }
 
+nav {
+  display: block;
+}
+
+.headerlogo {
+  float: left;
+  margin-left: 160px;
+  margin-top: 30px;
+}
+
+.headerlogo p {
+  margin: 0;
+}
+/*
 nav img {
     float: left;
     height: 50px;
     padding: 5px;
 }
 
+.logo {
+  margin-left: 160px;
+  margin-top: 25px;
+}
+
 #headerlogo {
     color: #65d4ca;
     font-size: 30px;
-    padding: 30px 10px;
-    display: inline-block;
+    padding-top: 30px;
 }
-
-nav {
-    display: block;
+*/
+nav::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 nav ul {
     float: right;
     margin: 30px;
 }
+
 nav ul li {
     font-size: 16px;
     display: inline-block;
@@ -401,11 +453,6 @@ nav ul li a:hover {
     color: #65d4ca;
 }
 
-.logo {
-    margin-left: 160px;
-    margin-top: 25px;
-}
-
 .companylogo {
     color: seagreen;
     padding-left: 10px;
@@ -421,7 +468,7 @@ nav ul li a:hover {
 
 .introduction h3 {
     font-size: 140%;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .introduction p {
@@ -429,7 +476,13 @@ nav ul li a:hover {
     font-size: 110%;
 }
 
-.introbutton {
+.hd-line {
+  width: 100px;
+  margin: 0 auto;
+  border: 1px solid #65d4ca;
+}
+
+.button {
     font-size: 100%;
     color: #65d4ca;
     background-color: rgba(255, 255, 255, 0);
@@ -439,19 +492,246 @@ nav ul li a:hover {
     text-transform:uppercase;
 }
 
-#abo {
-    height: 300px;
-    border: 1px solid red;
+.button a {
+    text-decoration: none;
+    color: #65d4ca;
 }
-#abo div {
-    width: 200px;
-    height: 30px;
-    margin: 100px auto;
-    text-align: center;    
-    font-size: 25px;
+
+.abo-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: auto;
+}
+
+.abo-section {
+  height: 300px;
+}
+
+.abo-section:first-child {
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: right;
+  width: 40%;
+}
+
+.abo-section:last-child {
+  width: 50%;
+}
+
+.abo-section-header {
+  height: 20%;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+.abo-section-header h3 {
+  font-family:'Times New Roman', Times, serif;
+}
+
+.abo-section-content1 p {
+  font-size: 80%;
+  padding-bottom: 20px;
 }
 
 #storyvideo {
     text-align: center;
+}
+
+.sv {
+  background-image: url(src/img/header/bgk-middle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sv img {
+  padding: 20px;
+}
+
+.sv h4 {
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Expertise Grid */
+#exp h3 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 150%;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.exp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.exp-contents {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60%;
+  color: grey;
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+}
+
+.exp-line {
+  width: 60px;
+  margin: 5px auto;
+  margin-bottom: 50px;
+  background-color: grey;
+}
+
+.exp-wrap {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 150px);
+  margin-bottom: 50px;
+  
+    
+  
+}
+.exp-wrap div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.exp-wrap div img {
+  height: 50px;
+}
+
+.exp-item1 {
+  grid-area: 1 / 1 / 2 / 2; 
+ 
+  
+  text-align: center;
+}
+
+.exp-item2 {
+  grid-area: 1 / 2 / 2 / 3;
+  border-left: 1px solid grey;
+  
+  border-right:grey 1px solid;
+  text-align: center;
+}
+
+.exp-item3 {
+  grid-area: 1 / 3 / 2 / 4;
+  
+  
+  text-align: center;
+}
+
+.exp-item4 {
+  grid-area: 2 / 1 / 3 / 2;
+  border-top: 1px solid grey;
+  
+  text-align: center;
+}
+
+.exp-item5 {
+  grid-area: 2 / 2 / 3 / 3;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  text-align: center;
+}
+
+.exp-item6 {
+  grid-area: 2 / 3 / 3 / 4;
+  
+  border-top: 1px solid grey;
+ 
+  text-align: center;
+}
+
+.exp-wrap h6 {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.exp-wrap p {
+  text-transform: capitalize;
+  font-size: 10px;
+  color: grey;
+}
+
+/* Media Queries */
+
+/* Desktop Computer */
+
+@media only screen  and (min-width: 1024px) {
+
+  body {
+    background-color: white;
+  }
+
+.submitbutton {
+  color: #65d4ca;
+  border: 1px solid #65d4ca;
+  width: 100px;
+  height: 50px;
+}
+
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  body {
+    background-color: red;
+  }
+
+  
+
+}
+
+/* Smartphone */
+
+@media only screen and (max-width: 767px) {
+
+  body {
+    background-color: yellow;
+  }
+
+.contact {
+  flex-direction: column;
+  
+}
+
+  .grid-container-contact {   
+   justify-content: center;
+   justify-items: center;
+   align-items: center;    
+    /* center items */    
+  }
+
+  .grid-container-client {
+    justify-content: center;
+   justify-items: center;
+   align-items: center;  
+
+  }
+
+
+  
+
 }
 

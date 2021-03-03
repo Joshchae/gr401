@@ -12,8 +12,10 @@
 <!-- Josh !-->
 <header>
     <nav id="top">
-        <a href="#"><img class="logo" src="./src/img/header/logo.png" alt="Company logo: tajam"/></a>
-                <p id="headerlogo">tajam</p>
+      <div>
+        <a href="#"><img class="headerlogo" src="./src/img/header/logo.png" alt="Company logo: tajam"/></a>
+                <p class="headerlogo">tajam</p>
+      </div>
             <ul>
                 <li><a href="#" target="_self">Home</a></li>
                 <li><a href="#abo" target="_self">about</a></li>
@@ -27,26 +29,82 @@
     <div>
         <article class="introduction">
             <h3>We Are Awesome Creative Agency</h3>
+            <hr class="hd-line">
+            <br>
             <p>This is Photoshop's version of Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloribus omnis quis tempora. Iure in deserunt magni repellat ipsam harum soluta quo dolorem, rerum accusantium itaque laboriosam laborum.</p>
             <br>
-            <button class="introbutton">
-                Learn more
+            <button class="button" type="button"><a href="#abo">Learn more</a>
             </button>
-    
         </article>
     </div>
 </header>
 
 <section id="abo">
-    <div>Our Story</div>
-</section>
-<section id="storyvideo">
-    <div>
-        <img 
+  <div class="abo-container">
+    <div class="abo-section section-left">
+      <img src="src/img/header/logo-big.png" alt="big logo" width="150"/>
     </div>
-    <div>Watch our story</div>
+    <div class="abo-section section-right">
+      <div class="abo-section-header"><h3>Our Story</h3></div>
+        <div class="abo-section-main">
+          <div class="abo-section-content1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eos molestias delectus quas non repellat, ullam iusto? Est, dolores neque! Deleniti minima mollitia dolorum! Culpa quos a sed perferendis? Fuga.</p>
+          </div>
+          <div class="abo-section-button">
+              <button class="button" type="button"><a href="#exp">Learn more</a>
+            </button>
+          </div>
+        </div>      
+    </div>
+  </div>
 </section>
-<section id="exp">Expertise</section>
+
+<section id="storyvideo">
+  <div class="sv">
+    <img src="src/img/header/play.png" alt="video play" width="50">
+    <h4>watch our story</h4>
+  </div>
+</section>
+
+<section id="exp">
+  <div class="exp-container">
+    <h3>Expertise</h3>
+    <p class="exp-contents">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+    <hr class="exp-line">
+    <div class="exp-wrap">
+        <div class="exp-item1">
+          <img src="src/img/teams/screen.png" alt="web development">
+          <h6>web design & development</h6>
+          <p>This is photoshop's version of lorem ipsum. proin gravida nibh vel velit auctor aliquet aenean.</p>
+        </div>
+        <div class="exp-item2">
+          <img src="src/img/teams/pen.png" alt="branding">
+          <h6>branding identity</h6>
+          <p>This is photoshop's version of lorem ipsum. proin gravida nibh vel velit auctor aliquet aenean.</p>
+        </div>
+        <div class="exp-item3">
+          <img src="src/img/teams/mobile.png" alt="mobile">
+          <h6>mobile app</h6>
+          <p>This is photoshop's version of lorem ipsum. proin gravida nibh vel velit auctor aliquet aenean.</p>
+        </div>
+        <div class="exp-item4">
+          <img src="src/img/teams/graph.png" alt="search engine">
+          <h6>search engine optimization</h6>
+          <p>This is photoshop's version of lorem ipsum. proin gravida nibh vel velit auctor aliquet aenean.</p>
+        </div>
+        <div class="exp-item5">
+          <img src="src/img/teams/gameboy.png" alt="game development">
+          <h6>game development</h6>
+          <p>This is photoshop's version of lorem ipsum. proin gravida nibh vel velit auctor aliquet aenean.</p>
+        </div>
+        <div class="exp-item6">
+          <img src="src/img/teams/heart.png" alt="made with love">
+          <h6>made with love</h6>
+          <p>This is photoshop's version of lorem ipsum. proin gravida nibh vel velit auctor aliquet aenean.</p>
+        </div>
+    </div>
+  </div>
+</section>
  
 
 <!-- Joldon -->
@@ -92,15 +150,15 @@
     <form method="GET" autocomplete="on">
         <div class="grid-container-contact">
             <div class="title"><h3>GIVE US A GOOD NEWS</h3></div>
-            <div class="name"><input type="text" value="Name" size="50"></div>
-            <div class="email"><input type="email" value="Email" size="50"></div>
-            <div class="subject"><input type="text" value="Subject" size="50"></div>
-            <div class="message"><textarea  maxlength="200"  placeholder="Your message here"  rows="12"   cols="46"></textarea></div>
-            <div class="submit"><input class="introbutton" type="submit" value="SUBMIT"></div>
+            <div class="name"><input type="text" value="Name" size="1"></div>
+            <div class="email"><input type="email" value="Email" size="1"></div>
+            <div class="subject"><input type="text" value="Subject" size="1"></div>
+            <div class="message"><textarea  maxlength="200"  placeholder="Your message here"  rows="12"   cols="32"></textarea></div>
+            <div class="submit"><input class="submitbutton" type="submit" value="SUBMIT"></div>
           </div>
           </form>
     
-    
+
     
         <div class="grid-container-client">
             <div class="Clients"><h3>OUR HAPPY CLIENTS</h3></div>
@@ -140,13 +198,21 @@
   <div class="our-studio-footer">
     <h4>Our Studio</h4>
     <div class="address">
+<<<<<<< HEAD
     <img src="src/img/footer/big104.png" alt="big icon" height="15"/>
+=======
+    <img src="src/img/footer/big104.png" alt="big icon"/>
+>>>>>>> 6c41bda05ace5c8e9e94cab884d1991d952d07c5
     <h6>Ruco cucruk, JI, Radio luar dalem jos No.12-13, Kalideres - Jakarta Barat 11480 - Indonesia</h6>
     </div>
     <!-- I wanted to create an image-icon of a small phone 
     <i class="fa fa-phone"></i> -->
     <div class="phone-number">
+<<<<<<< HEAD
       <img src="src/img/footer/phone351.png" alt="phone icon" height="15"/>
+=======
+      <img src="src/img/footer/phone351.png" alt="phone icon"/>
+>>>>>>> 6c41bda05ace5c8e9e94cab884d1991d952d07c5
       <h6>(+62) 21-2224 3333</h6>
     </div>
   </div>
