@@ -261,9 +261,13 @@ footer {
     flex-direction: row;
   }
 
-
 /*  Daniel Contact part */
 /* For development only */
+
+
+
+/* For development only */
+
 
 .contact {
   display: flex;
@@ -274,6 +278,7 @@ footer {
 input {
   resize: horizontal;
   width: 250px;
+
 }
 
 input:active {
@@ -502,7 +507,6 @@ nav ul li a:hover {
   padding-top: 20px;
 }
 
-
 .abo-section-header h3 {
   font-family:'Times New Roman', Times, serif;
 }
@@ -659,7 +663,6 @@ align-items: center;
   body {
     background-color: white;
   }
-
   .submitbutton {
     color: #65d4ca;
     border: 1px solid #65d4ca;
@@ -699,7 +702,6 @@ align-items: center;
     display: table;
     clear: both;
   } */
-  
 }
 
 /* Smartphone */
