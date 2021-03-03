@@ -356,14 +356,19 @@ nav {
 
 .headerlogo {
   float: left;
+}
+
+.headerlogo img {
   margin-left: 160px;
-  margin-top: 30px;
+  margin-top: 40px;
+  display: inline-block;
 }
 
 .headerlogo p {
-  margin: 0;
+  display: inline-block;
 }
 /*
+ 
 nav img {
     float: left;
     height: 50px;
